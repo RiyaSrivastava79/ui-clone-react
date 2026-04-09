@@ -1,0 +1,86 @@
+.landing-page {
+  display: flex;
+  align-items: flex-end;
+}
+
+.landing-content {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.stack {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-page .auth-form,
+.signup-page .auth-form {
+  margin-top: 28px;
+}
+
+.signup-page .page-header h1 {
+  max-width: 240px;
+}
+
+.signup-form {
+  min-height: calc(100% - 128px);
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group {
+  border: 0;
+  margin-top: 4px;
+}
+
+.radio-group legend {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2e3339;
+}
+
+.radio-group legend span {
+  color: #dd4a4a;
+}
+
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 20px;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #444a54;
+}
+
+.radio-group input[type='radio'] {
+  accent-color: var(--accent);
+  width: 18px;
+  height: 18px;
+}
+
+.create-btn {
+  margin-top: auto;
+}
+
+.profile-page {
+  padding-left: 0;
+  padding-right: 0;
+  background: #f7f8f9;
+}
+
+.profile-title {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 28px 20px 18px;
+  background: #fff;
+  border-bottom: 1px solid #ececef;
+}
+
+.profile-dashed {
+  margin-top: 0;
+  border-bottom: 1px dashed #d8d9de;
+}

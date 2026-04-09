@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+  --bg-page: #edf0f4;
+  --surface: #ffffff;
+  --surface-muted: #f7f8f9;
+  --text-primary: #1d2226;
+  --text-muted: #6f7482;
+  --border: #cbcbcb;
+  --accent: #6c25ff;
+  --accent-soft: #cebafb;
+  --radius-frame: 24px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background:
+    radial-gradient(circle at 15% 20%, #dfe9ff 0%, rgba(223, 233, 255, 0) 35%),
+    linear-gradient(160deg, #f4f5f8 0%, #e9edf2 100%);
+  color: var(--text-primary);
+}
+
+.app-shell {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.mobile-frame {
+  width: min(375px, 100vw - 20px);
+  height: min(812px, 100vh - 20px);
+  background: var(--surface-muted);
+  border-radius: var(--radius-frame);
+  box-shadow: 0 26px 54px rgba(29, 34, 38, 0.14);
+  border: 1px solid #e9ebf0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.page {
+  min-height: 100%;
+  padding: 40px 20px 24px;
+}
+
+@media (max-width: 420px) {
+  .app-shell {
+    padding: 0;
+  }
+
+  .mobile-frame {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,158 @@
+.page-header h1 {
+  font-size: 28px;
+  line-height: 1.18;
+  font-weight: 500;
+  max-width: 240px;
+}
+
+.page-header p {
+  margin-top: 14px;
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 1.45;
+  max-width: 250px;
+}
+
+.back-btn {
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.btn {
+  border: 0;
+  border-radius: 6px;
+  min-height: 46px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-primary {
+  color: #fff;
+  background: var(--accent);
+}
+
+.btn-secondary {
+  color: #1d2226;
+  background: var(--accent-soft);
+}
+
+.btn-muted {
+  color: #ffffff;
+  background: #cbcbcb;
+}
+
+.field-wrap {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.field-label {
+  display: inline-block;
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 500;
+  background: var(--surface-muted);
+  padding: 0 6px;
+  z-index: 1;
+}
+
+.field-input {
+  width: 100%;
+  border: 1px solid #cbcbcb;
+  border-radius: 8px;
+  min-height: 40px;
+  padding: 0 14px;
+  font-size: 14px;
+  color: #1d2226;
+  background: var(--surface-muted);
+  outline: none;
+}
+
+.field-input::placeholder {
+  color: #8f939f;
+}
+
+.field-input:focus {
+  border-color: var(--accent);
+}
+
+.ui-card {
+  background: #f7f8f9;
+  border-top: 1px solid #e3e5e9;
+  border-bottom: 1px dashed #d9dbe0;
+  padding: 24px 20px 22px;
+}
+
+.card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.card-avatar-wrap {
+  position: relative;
+}
+
+.card-avatar {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-badge {
+  position: absolute;
+  right: -2px;
+  bottom: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 2px solid #ffffff;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.card-head h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card-head p {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #1d2226;
+}
+
+.card-description {
+  margin-top: 16px;
+  color: #1d2226;
+  font-size: 14px;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
