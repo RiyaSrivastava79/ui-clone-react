@@ -18,7 +18,7 @@ function LoginPage() {
     <section className="page login-page">
       <Header
         title="Signin to your PopX account"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+        subtitle="Enter your email address and password to continue."
       />
       <form className="auth-form" onSubmit={handleSubmit}>
         <InputField
